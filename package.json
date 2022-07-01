@@ -2,11 +2,11 @@
   "name": "us",
   "version": "0.1.0",
   "private": true,
-  "homepage":".",
   "dependencies": {
     "animate.css": "^3.6.1",
     "animateplus": "^2.0.1",
     "antd": "^3.4.1",
+    "gh-pages": "^4.0.0",
     "jquery": "^3.3.1",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
@@ -16,6 +16,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "homepage": "https://longvv112.github.io/anniversary/"
 }
